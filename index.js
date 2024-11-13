@@ -1,9 +1,13 @@
 const express = require("express");
 const fetch = require("node-fetch");
+const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 const GEONAMES_USERNAME = "YOUR_GEONAMES_USERNAME";
+
+// Enable CORS for all routes
+app.use(cors());
 
 // Middleware to parse JSON bodies
 app.use(express.json());
