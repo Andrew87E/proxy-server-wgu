@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const GEONAMES_USERNAME = "YOUR_GEONAMES_USERNAME";
+const GEONAMES_USERNAME = "secret8squirrel";
 
 // Enable CORS for all routes
 app.use(cors());
